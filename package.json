@@ -1,0 +1,38 @@
+{
+  "name": "@shreysaxena/retry-kit",
+  "version": "1.0.0",
+  "description": "Zero-dependency resilient retry and backoff utility with jitter and AbortSignal support.",
+  "type": "module",
+  "main": "./src/index.cjs",
+  "module": "./src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.cjs"
+    }
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "retry",
+    "backoff",
+    "exponential-backoff",
+    "jitter",
+    "abortsignal",
+    "resilience",
+    "promise-retry",
+    "zero-dependencies"
+  ],
+  "author": "Shrey Saxena",
+  "license": "MIT"
+}
